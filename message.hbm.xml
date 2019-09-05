@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+
+<hibernate-mapping>
+	<class name="example.Message" table="message">
+	
+		<id name="id" type="int" column="id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="messageText" column="message_text" type="string"></property>
+	
+	</class>
+</hibernate-mapping>
